@@ -8,7 +8,7 @@ function onButtonClick(evt)
 {
 	agregarMensaje();
 }
-//***Agregar mensaje y checkbox
+//***Agregar mensaje y checkbox y tacho
 function agregarMensaje()
 {
 	var item = document.createElement('li');
