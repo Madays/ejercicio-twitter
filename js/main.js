@@ -10,7 +10,9 @@ function onButtonClick(evt)
 }
 //***Agregar mensaje y checkbox
 function agregarMensaje()
-{
+{   if(input.value==""){
+    
+}else{
 	var item = document.createElement('li');
 	var span = document.createElement('span');
 	//Agregar chheckbox
@@ -47,7 +49,8 @@ function agregarMensaje()
         }
     }
     elementoCheckbox.addEventListener('click', onChecked);
-	tacho.addEventListener('click', onItemClick);    
+	tacho.addEventListener('click', onItemClick);  
+}
 }
 //Quitar menaje
 function onItemClick(evt)
