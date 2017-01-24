@@ -4,7 +4,6 @@ var lista = document.getElementById('lista');
 
 boton.addEventListener('click', onButtonClick);
 
-
 function onButtonClick(evt)
 {
 	agregarMensaje();
@@ -28,24 +27,28 @@ function agregarMensaje()
     //Fin elemento para tacho
     
 	span.innerHTML = input.value;//mensaje
+
 	item.appendChild(span);//
     item.appendChild(tacho);
 	lista.appendChild(item);    
 	input.value = '';
 	input.focus();
-
-	tacho.addEventListener('click', onItemClick);
     //Tachar mensaje
     var myCheck = document.getElementById('myCheck');
-    myCheck.addEventListener('click', tacharMensaje);
-    function tacharMensaje(){
-
-    if(myCheck.checked==true){
-        span.style.text_decoration = "line-through";
+    function onChecked(evt){
+        tacharMensaje();    
     }
-}
-}
+    function tacharMensaje(){
+        if(elementoCheckbox .checked){
+            span.classList.add("tareas");    
 
+        }else{
+            span.classList.remove("tareas");     
+        }
+    }
+    elementoCheckbox.addEventListener('click', onChecked);
+	tacho.addEventListener('click', onItemClick);    
+}
 //Quitar menaje
 function onItemClick(evt)
 {
