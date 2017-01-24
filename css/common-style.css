@@ -1,0 +1,13 @@
+/*---------- hr en la pagina*/
+hr{
+    display: inline-block;
+    padding: 0 30px;    
+}
+.container-footer hr{
+    border-top: 2px solid #fff;
+}
+.content-banner hr,section.servicios hr, section.contactame hr{
+    border-top: 2px solid #F05F40;*/
+}
+
+/*--------END-- hr en la pagina*/

@@ -1,0 +1,19 @@
+* {
+       /* outline: solid 1px red;    */
+}
+ul{
+    padding: 0;
+    
+}
+li{
+    list-style: none;
+    background: #eee;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+input[type=checkbox]{
+    margin: 0 10px 0 0;    
+}
+span{
+    margin-top: -10px;    
+}
