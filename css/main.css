@@ -17,6 +17,6 @@ input[type=checkbox]{
 span{
     margin-top: -10px;    
 }
-.tareas{
+.itemTask{
     text-decoration: line-through;
 }
